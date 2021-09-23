@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Theme Parks of California</title>
+
+    <link rel="stylesheet" href="/style.css" />
+
+    <script src="/script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AjCssBZaGbCTHpMQF0jcT3O8uRIde3ncfjYaYb6iRGW6orMElhqWgw949i2HtjWd"
+      async
+      defer
+    ></script>
+    <script async src="/semantic.min.js"></script>
+  </head>
+  <body onload="GetMap();">
+    <div id="dropdownStyle" class="tagline container text-center park-list">
+      <div id="dropdown" class="ui fluid search selection dropdown">
+        <input type="hidden" name="themeParks" />
+        <i class="dropdown icon"></i>
+        <div class="default text">Select a park</div>
+        <div class="menu">
+          <div class="item" data-value="Disneyland">Disneyland</div>
+          <div class="item" data-value="Six Flags California">
+            Six Flags California
+          </div>
+          <div class="item" data-value="Universal Studios">
+            Universal Studios
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <table id="mainStructure">
+      <tbody>
+        <tr>
+          <td style="width: 100%;">
+            <table id="mainStructure2">
+              <tbody>
+                <tr>
+                  <td style="width: 40%;" id="parkLogo">
+                    <img
+                      id="logo2"
+                      src="https://cdn.glitch.com/6e6bb965-c354-4348-85af-0fcde702eb29%2FTop10ThemeParkCollage%20(2).jpg?v=1621571509652"
+                    />
+                  </td>
+                  <td style="width: 60%;" id="parkName">
+                    Theme Parks of California
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div id="parkAbout">
+              Welcome to our website where our job is to inform the general
+              public about many theme parks in California and it's top
+              rides/food.
+            </div>
+          </td>
+        </tr>
+        <div class="ui animated fade button" tabindex="0">
+          <div class="visible content">Hover Over For a Surprise</div>
+          <div class="hidden content">
+            Hello World!
+          </div>
+        </div>
+        <tr>
+          <td>
+            <table class="listTable">
+              <tbody>
+                <tr>
+                  <td>
+                    <table class="listTable2">
+                      <tr></tr>
+                      <th id="foodHeader"></th>
+                      <tr>
+                        <td id="food0"></td>
+                      </tr>
+                      <tr>
+                        <td id="food1"></td>
+                      </tr>
+                      <tr>
+                        <td id="food2"></td>
+                      </tr>
+                      <tr>
+                        <td id="food3"></td>
+                      </tr>
+                      <tr>
+                        <td id="food4"></td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td>
+                    <table class="listTable2">
+                      <th id="rideHeader"></th>
+                      <tr>
+                        <td id="ride0"></td>
+                      </tr>
+                      <tr>
+                        <td id="ride1"></td>
+                      </tr>
+                      <tr>
+                        <td id="ride2"></td>
+                      </tr>
+                      <tr>
+                        <td id="ride3"></td>
+                      </tr>
+                      <tr>
+                        <td id="ride4"></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td id="parkSafety"></td>
+        </tr>
+        <tr>
+          <td id="mapTable">
+            <div id="myMap" style="position:relative;"></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="semantic/dist/semantic.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Dancing+Script:wght@600&family=Goblin+One&display=swap"
+      rel="stylesheet"
+    />
+  </body>
+  <footer></footer>
+</html>
